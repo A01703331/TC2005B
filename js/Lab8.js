@@ -13,4 +13,3 @@ const texting = "Este texto es parte de la prueba del laboratorio 8";
 
 texter.writeFileSync("Lab8.txt",texting);
 
-    
