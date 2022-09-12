@@ -16,8 +16,59 @@
             </ul>
         </div>
         <img alt src="comfy.jpg" width=960>
+        <section>
+            <ul>
+                <label for="confirmtxt">Register Password:</label>
+                <input type="password" id = "confirmtxt" placeholder="Input Password">
+            </ul>
+            <ul>
+                <label for="pswrdtxt">Confirm Password:</label>
+                <input type="password" id = "pswrdtxt" placeholder="Input Password">
+            </ul>
+            <ul>
+                <button type ="button" onclick="validate()">Submit Password</button>
+            </ul>
+        </section>
+        <section>
+            <h2 class = "Problem">Ninisani Shop</h2>
+            <p id = "Chase">Welcome to the Ninisani Shop! Here you can buy goods based on our Livers, we're currently offering a promotion on Ange Katrina's goods!</p>
+            <div>
+                <h2>Voice Goods</h2>
+                <img src="https://s2.booth.pm/061b7ec9-591f-45cb-a44f-fae275385a37/i/3276602/4f3b0c42-d36b-457b-b5f8-dd5876d2284a_base_resized.jpg" width="400" height="400" title="Voice Goods">
+                <p class="Answers">$10</p>
+                <button type="button" onclick="addA()">Add 1</button>
+                <button type="button" onclick="remA()">Remove 1</button>
+                <label>Amount:</label>
+                <label id="Voice">0</label>
+            </div>
+            <div>
+                <h2>Acrylic Goods</h2>
+                <img src="https://s2.booth.pm/061b7ec9-591f-45cb-a44f-fae275385a37/i/3276602/08347aa9-a521-4e8a-96d0-85d61348b32d_base_resized.jpg" width="400" height="400" title="Acrylic Goods">
+                <p class="Answers">$15</p>
+                <button type="button" onclick="addB()">Add 1</button>
+                <button type="button" onclick="remB()">Remove 1</button>
+                <label>Amount:</label>
+                <label id="Acrylic">0</label>
+            </div>
+            <div>
+                <h2>Tapestry Goods</h2>
+                <img src="https://s2.booth.pm/061b7ec9-591f-45cb-a44f-fae275385a37/i/3276602/bd0a9bb0-12a3-44db-b610-645ce003a9a7_base_resized.jpg" width="400" height="400" title="Tapestry Goods">
+                <p class="Answers">$20</p>
+                <button type="button" onclick="addC()">Add 1</button>
+                <button type="button" onclick="remC()">Remove 1</button>
+                <label>Amount:</label>
+                <label id="Tapestry">0</label>
+            </div>
+            <p>   
+                <button type="button" onclick="totals()">Calculate Price</button>           
+                <label>Your order total is:</label>
+                <label id="Purchase">0 Dollars (Tax included)</label>
+            </p>
+        </section>
         <footer>
             <p>Sitio de VSCode: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
         </footer>
+        <script src="js/Lab4.js"></script>
+        <script src="js/Lab6.js"></script>
     </body>
 </html>
